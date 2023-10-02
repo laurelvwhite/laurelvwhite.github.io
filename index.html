@@ -23,10 +23,6 @@
             font-size: 2em;
         }
 
-        h2 {
-            flex-basis: 100%
-        }
-
         nav {
             background-color: #3f5ecc;
             text-align: center;
@@ -58,18 +54,11 @@
             display: flex; /* Use flexbox for layout */
             align-items: center; /* Vertically center content */
             max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
             background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         .text {
             flex: 1; /* Allow text to grow and take available space */
-        }
-
-        .text_full_line {
-            flex-basis: 100%;
         }
 
         .image {
@@ -93,16 +82,16 @@
     <div class="container">
         <h2>Please bear with me while my website is under construction!</h2>
     </div>
-    <div class="flex_container">
-        <div class="text_full_line">
-            <h2>About Me</h2>
-        </div>
-        <div class="text">
-            <p>My name is Laurel and I am a graduate student in the physics program at the Massachusetts Institute of Technology. I do observational astronomy research on galaxy clusters with Professor Michael McDonald.</p>
-            <p>I am originally from Syracuse, NY and I have a B.S. in Physics with a minor in Mathematics from Syracuse University. During my four years there, I conducted gravitational-wave research with the Laser Interferometer Gravitational-Wave Observatory and the Syracuse University Gravitational Wave Research Group under Professors Peter Saulson and Duncan Brown.</p>
-        </div>
-        <div class="image">
-            <img src="headshot.png" alt="headshot" width="25%" height="25%">
+    <div class="container">
+        <h2>About Me</h2>
+        <div class="flex_container">
+            <div class="text">
+                <p>My name is Laurel and I am a graduate student in the physics program at the Massachusetts Institute of Technology. I do observational astronomy research on galaxy clusters with Professor Michael McDonald.</p>
+                <p>I am originally from Syracuse, NY and I have a B.S. in Physics with a minor in Mathematics from Syracuse University. During my four years there, I conducted gravitational-wave research with the Laser Interferometer Gravitational-Wave Observatory and the Syracuse University Gravitational Wave Research Group under Professors Peter Saulson and Duncan Brown.</p>
+            </div>
+            <div class="image">
+                <img src="headshot.png" alt="headshot" width="25%" height="25%">
+            </div>
         </div>
     </div>
     <div class="container">
