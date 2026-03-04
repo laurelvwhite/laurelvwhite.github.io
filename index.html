@@ -6,45 +6,76 @@
     <title>Laurel White</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #dadde8;
+            font-family: "Helvetica Neue", Arial, sans-serif;
             margin: 0;
             padding: 0;
+
+            background: linear-gradient(
+                180deg,
+                #0d0b1e 0%,     /* near-black violet */
+                #1c1044 20%,    /* deep indigo */
+                #3b0f70 45%,    /* classic magma purple */
+                #6a176e 75%,    /* subtle magenta shift */
+                #932667 100%    /* upper-magma tone */
+            );
+
         }
 
         header {
-            background-color: #7c8dde;
+            position: relative;
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.3),
+                rgba(0, 0, 0, 0.3)
+            ), url("clusters.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            height: 40vh;              /* 50% of screen height */
+            min-height: 300px;         /* ensures it’s not too small */
+
+            display: flex;
+            align-items: center;       /* vertical centering */
+            justify-content: center;   /* horizontal centering */
+
             color: white;
             text-align: center;
-            padding: 20px;
         }
 
         h1 {
-            font-size: 2em;
+            font-size: 3rem;
+            margin: 0;
+            letter-spacing: 2px;
         }
 
         nav {
-            background-color: #3f5ecc;
+            background-color: #3b0f70;
             text-align: center;
-            padding: 10px;
+            padding: 12px;
         }
-
         nav a {
             color: white;
             text-decoration: none;
-            margin: 10px;
+            margin: 12px;
+            transition: opacity 0.2s ease;
+        }
+
+        nav a:hover {
+            opacity: 0.7;
         }
 
         .container {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+            background-color: rgba(255, 255, 255, 0.87);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
         }
 
         footer {
-            background-color: #7c8dde;
+            background-color: #1c1044;
             color: white;
             text-align: center;
             padding: 10px;
@@ -54,7 +85,6 @@
             display: flex; /* Use flexbox for layout */
             align-items: center; /* Vertically center content */
             max-width: 800px;
-            background-color: white;
         }
 
         .text {
@@ -105,8 +135,9 @@
     </div>
     <div id="Teaching" class="container">
         <h2>Teaching</h2>
-        <p>I have a strong interest in teaching and serving diverse populations of students. Most recently, I have served as the 2024-25 Teaching Development Fellow for the MIT Physics Department in conjunction with our Teaching and Learning Lab. In this role, I have developed a new seminar course in professional development for physics graduate teaching assistants, which I will be running as a pilot in Fall 2025.</p>
+        <p>I am committed to teaching and serving diverse populations of students. Recently, I served as the 2024-25 Teaching Development Fellow for the MIT Physics Department in conjunction with our Teaching and Learning Lab. In this role, I developed a new seminar course in professional development for physics graduate teaching assistants, which I ran as a pilot in Fall 2025.</p>
         <p>I also spend a week each summer as a Research Project Leader with the Warrior Scholar Project STEM Bootcamp at MIT. I work with veterans and active duty US military members to do hands-on astrophysics research.</p>
+        <p>I have been enjoying teaching an introductory course in astronomy and cosmology called "Cosmic Time Machine: 13 Billion Years of the Universe" at the <a href="https://ccae.org/" title="Check out CCAE">Cambridge Center for Adult Education</a> for the Fall 2025 and Winter 2026 terms.</p>
     </div>
     <div id="Publications" class="container">
         <h2>Publications</h2>
@@ -125,7 +156,7 @@
     </div>
     <div id="Fun" class="container">
         <h2>Fun Stuff</h2>
-        <p>I work as a mascot performer on MIT's <a href="https://www.instagram.com/p/Cuj3F7LOm-O/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" title="See my performer spotlight">Team TIM</a>!</p>
+        <p>I have worked as a mascot performer on MIT's Team TIM!</p>
         <p>I liked to do all sorts of crafts, particularly knitting, crocheting, and sewing. I also love to hike with my rescue dog, Bodie.</p>
     </div>
     <div id="Contact" class="container">
@@ -133,7 +164,7 @@
         <p>Email: lvwhite@mit.edu</p>
     </div>
     <footer>
-        Updated 2025
+        Updated 2026
     </footer>
 </body>
 </html>
