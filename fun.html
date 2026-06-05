@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Stuff – Laurel White</title>
+    <style>
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(
+                180deg,
+                #0d0b1e 0%,
+                #1c1044 20%,
+                #3b0f70 45%,
+                #6a176e 75%,
+                #932667 100%
+            );
+            min-height: 100vh;
+        }
+
+        header {
+            position: relative;
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.3),
+                rgba(0, 0, 0, 0.3)
+            ), url("images/clusters.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 40vh;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background-color: #3b0f70;
+            text-align: center;
+            padding: 12px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 12px;
+            transition: opacity 0.2s ease;
+        }
+        nav a:hover {
+            opacity: 0.7;
+        }
+        nav a.active {
+            border-bottom: 2px solid white;
+            padding-bottom: 2px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.87);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #1c1044;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+
+        .bodie-image {
+            margin-top: 16px;
+            text-align: center;
+        }
+
+        .bodie-image img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .bodie-image figcaption {
+            margin-top: 8px;
+            font-style: italic;
+            color: #555;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Laurel White</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="service.html">Service/Outreach</a>
+        <a href="fun.html" class="active">Fun Stuff</a>
+    </nav>
+    <div id="Fun" class="container">
+        <h2>Fun Stuff</h2>
+        <p>I have worked as a mascot performer on MIT's Team TIM!</p>
+        <p>I like to do all sorts of crafts, particularly knitting, crocheting, and sewing.</p>
+        <p>I love to hike, camp, and generally be outside with my rescue dog, Bodie. Last year, we hiked our first 3 peaks on our quest to complete the NH 4000 footers.</p>
+        <figure class="bodie-image">
+            <img src="images/Bodie.png" alt="Bodie the rescue dog">
+            <figcaption>Bodie and I at one of our favorite places, Rock Meadow!</figcaption>
+        </figure>
+    </div>
+    <footer>
+        Updated 2026
+    </footer>
+</body>
+</html>

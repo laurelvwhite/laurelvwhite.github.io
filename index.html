@@ -9,16 +9,15 @@
             font-family: "Helvetica Neue", Arial, sans-serif;
             margin: 0;
             padding: 0;
-
             background: linear-gradient(
                 180deg,
-                #0d0b1e 0%,     /* near-black violet */
-                #1c1044 20%,    /* deep indigo */
-                #3b0f70 45%,    /* classic magma purple */
-                #6a176e 75%,    /* subtle magenta shift */
-                #932667 100%    /* upper-magma tone */
+                #0d0b1e 0%,
+                #1c1044 20%,
+                #3b0f70 45%,
+                #6a176e 75%,
+                #932667 100%
             );
-
+            min-height: 100vh;
         }
 
         header {
@@ -26,18 +25,15 @@
             background-image: linear-gradient(
                 rgba(0, 0, 0, 0.3),
                 rgba(0, 0, 0, 0.3)
-            ), url("clusters.png");
+            ), url("images/clusters.png");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-
-            height: 40vh;              /* 50% of screen height */
-            min-height: 300px;         /* ensures it’s not too small */
-
+            height: 40vh;
+            min-height: 300px;
             display: flex;
-            align-items: center;       /* vertical centering */
-            justify-content: center;   /* horizontal centering */
-
+            align-items: center;
+            justify-content: center;
             color: white;
             text-align: center;
         }
@@ -59,16 +55,18 @@
             margin: 12px;
             transition: opacity 0.2s ease;
         }
-
         nav a:hover {
             opacity: 0.7;
+        }
+        nav a.active {
+            border-bottom: 2px solid white;
+            padding-bottom: 2px;
         }
 
         .container {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-
             background-color: rgba(255, 255, 255, 0.87);
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
             border-radius: 8px;
@@ -79,24 +77,24 @@
             color: white;
             text-align: center;
             padding: 10px;
+            margin-top: 40px;
         }
 
         .flex_container {
-            display: flex; /* Use flexbox for layout */
-            align-items: center; /* Vertically center content */
+            display: flex;
+            align-items: center;
             max-width: 800px;
         }
 
         .text {
-            flex: 1; /* Allow text to grow and take available space */
+            flex: 1;
         }
 
         .image {
-            flex-shrink: 0; /* Prevent the image from growing */
-            margin-left: 20px; /* Add spacing between text and image */
-            max-width: 25%; /* Ensure the image doesn't exceed its original width */
+            flex-shrink: 0;
+            margin-left: 20px;
+            max-width: 25%;
         }
-
     </style>
 </head>
 <body>
@@ -104,14 +102,11 @@
         <h1>Laurel White</h1>
     </header>
     <nav>
-        <a href="#">Home</a>
-        <a href="#About">About</a>
-        <a href="#Research">Research</a>
-        <a href="#Teaching">Teaching</a>
-        <a href="#Publications">Publications</a>
-        <a href="#Service">Service/Outreach</a>
-        <a href="#Fun">Fun Stuff</a>
-        <a href="#Contact">Contact</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="research.html">Research</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="service.html">Service/Outreach</a>
+        <a href="fun.html">Fun Stuff</a>
     </nav>
     <div class="container">
         <h2>Please bear with me while my website is under construction!</h2>
@@ -125,42 +120,9 @@
                 <p>I am originally from Syracuse, NY and I have a B.S. in Physics with a minor in Mathematics from Syracuse University.</p>
             </div>
             <div class="image">
-                <img src="headshot.png" alt="headshot" width="75%" height="75%">
+                <img src="images/headshot.png" alt="headshot" width="75%" height="75%">
             </div>
         </div>
-    </div>
-    <div id="Research" class="container">
-        <h2>Research</h2>
-        <p>My thesis was on the evolution of galaxy clusters over cosmic time. To that end, I worked on characterizing the Cluster Evolutionary Reference Ensemble At Low-z (CEREAL) sample, which is a mass-selected sample of clusters with redshifts between 0.15 and 0.25 that have been followed up with Chandra. Learn more about CEREAL <a href="https://laurelvwhite.github.io/cereal/index.html">here</a>!</p>
-        <p>During my four years at Syracuse University, I conducted gravitational-wave research with the Laser Interferometer Gravitational-Wave Observatory and the Syracuse University Gravitational Wave Research Group under Professors Peter Saulson and Duncan Brown.</p>
-    </div>
-    <div id="Teaching" class="container">
-        <h2>Teaching</h2>
-        <p>I am committed to teaching and serving diverse populations of students. Recently, I served as the 2024-25 Teaching Development Fellow for the MIT Physics Department in conjunction with our Teaching and Learning Lab. In this role, I developed a new seminar course in professional development for physics graduate teaching assistants, which I ran as a pilot in Fall 2025.</p>
-        <p>I also spend a week each summer as a Research Project Leader with the Warrior Scholar Project STEM Bootcamp at MIT. I work with veterans and active duty US military members to do hands-on astrophysics research.</p>
-        <p>I have enjoyed teaching an introductory course in astronomy and cosmology called "Cosmic Time Machine: 13 Billion Years of the Universe" at the <a href="https://ccae.org/" title="Check out CCAE">Cambridge Center for Adult Education</a> for the Fall 2025 and Winter 2026 terms.</p>
-    </div>
-    <div id="Publications" class="container">
-        <h2>Publications</h2>
-        <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ae4ec3" title="Go to publisher">Here</a> is my most recent publication on the CEREAL sample.</p>
-        <p>Check out <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ade14b" title="Go to publisher">a cool case study</a> on AGN feedback in the galaxy cluster Abell 1885.</p>
-        <p>Please visit my <a href="https://orcid.org/0000-0001-6699-1300" title="Go to ORCID">ORCID</a> page for a complete list of publications.</p>
-    </div>
-    <div id="Service" class="container">
-        <h2>Service and Outreach</h2>
-        <ul>
-            <li>MIT Physics Graduate Student Council: Treasurer, Cookie Social Chair</li>
-            <li>MIT Physics Mentor Program: Mentor</li>
-            <li>MIT Graduate Women's Reading Group: Leadership team</li>
-            <li>Horizons for Homeless Children Playspace Program: Playspace Activity Leader</li>
-            <li>MIT Chancellor's Innovation Fund: Grant recipient</li>
-        </ul>
-    </div>
-    <div id="Fun" class="container">
-        <h2>Fun Stuff</h2>
-        <p>I have worked as a mascot performer on MIT's Team TIM!</p>
-        <p>I like to do all sorts of crafts, particularly knitting, crocheting, and sewing.</p>
-        <p>I love to hike, camp, and generally be outside with my rescue dog, Bodie. Last year, we hiked our first 3 peaks on our quest to complete the NH 4000 footers.</p>
     </div>
     <div id="Contact" class="container">
         <h2>Contact</h2>
