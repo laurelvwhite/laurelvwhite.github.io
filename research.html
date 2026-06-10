@@ -80,6 +80,42 @@
             padding: 10px;
             margin-top: 40px;
         }
+
+        .image-row {
+            display: flex;
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .image-row figure {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .image-row figure.landscape {
+            flex: 3;
+        }
+
+        .image-row figure.portrait {
+            flex: 2;
+        }
+
+        .image-row img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 6px;
+            display: block;
+        }
+
+        .image-row figcaption {
+            text-align: center;
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #555;
+            margin-top: 6px;
+        }
     </style>
 </head>
 <body>
@@ -95,8 +131,18 @@
     </nav>
     <div id="Research" class="container">
         <h2>Research</h2>
-        <p>My thesis was on the evolution of galaxy clusters over cosmic time. To that end, I worked on characterizing the Cluster Evolutionary Reference Ensemble At Low-z (CEREAL) sample, which is a mass-selected sample of clusters with redshifts between 0.15 and 0.25 that have been followed up with Chandra. Learn more about CEREAL <a href="https://laurelvwhite.github.io/cereal/index.html">here</a>!</p>
-        <p>During my four years at Syracuse University, I conducted gravitational-wave research with the Laser Interferometer Gravitational-Wave Observatory and the Syracuse University Gravitational Wave Research Group under Professors Peter Saulson and Duncan Brown.</p>
+        <p>My thesis was on the evolution of galaxy clusters over cosmic time. To that end, I worked on characterizing the Cluster Evolutionary Reference Ensemble At Low-z (CEREAL) sample, which is a mass-selected sample of clusters with redshifts between 0.085 and 0.25 that have been followed up with Chandra. Learn more about CEREAL <a href="https://laurelvwhite.github.io/cereal/index.html">here</a>!</p>
+        <p>During my four years at Syracuse University, I conducted gravitational-wave research with the Laser Interferometer Gravitational-Wave Observatory and the Syracuse University Gravitational Wave Research Group under Professors Peter Saulson and Duncan Brown. Learn more about this work in <a href="https://www.youtube.com/watch?v=Lxy2PuAk5r0">this short video</a>.</p>
+        <div class="image-row">
+            <figure class="landscape">
+                <img src="images/chandra_conference.png" alt="25 Years of Chandra Conference">
+                <figcaption>At the 25 Years of Chandra Conference with Eileen Collins, who piloted the Space Shuttle and took Chandra into orbit</figcaption>
+            </figure>
+            <figure class="portrait">
+                <img src="images/holden.png" alt="Syracuse University's Holden Observatory">
+                <figcaption>Giving a tour of Syracuse University's Holden Observatory</figcaption>
+            </figure>
+        </div>
     </div>
     <div id="Publications" class="container">
         <h2>Publications</h2>

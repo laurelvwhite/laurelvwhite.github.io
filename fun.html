@@ -81,22 +81,34 @@
             margin-top: 40px;
         }
 
-        .bodie-image {
+        .image-row {
+            display: flex;
+            gap: 16px;
             margin-top: 16px;
-            text-align: center;
         }
 
-        .bodie-image img {
-            max-width: 100%;
+        .image-row figure {
+            flex: 1;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .image-row img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            display: block;
         }
 
-        .bodie-image figcaption {
+        .image-row figcaption {
             margin-top: 8px;
             font-style: italic;
             color: #555;
             font-size: 0.9rem;
+            text-align: center;
         }
     </style>
 </head>
@@ -116,10 +128,16 @@
         <p>I have worked as a mascot performer on MIT's Team TIM!</p>
         <p>I like to do all sorts of crafts, particularly knitting, crocheting, and sewing.</p>
         <p>I love to hike, camp, and generally be outside with my rescue dog, Bodie. Last year, we hiked our first 3 peaks on our quest to complete the NH 4000 footers.</p>
-        <figure class="bodie-image">
-            <img src="images/Bodie.png" alt="Bodie the rescue dog">
-            <figcaption>Bodie and I at one of our favorite places, Rock Meadow!</figcaption>
-        </figure>
+        <div class="image-row">
+            <figure>
+                <img src="images/tim_and_jaylen.jpg" alt="Tim and Jaylen Brown">
+                <figcaption>Me (as Tim the Beaver) and Jaylen Brown</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Bodie.png" alt="Bodie the rescue dog">
+                <figcaption>Bodie and I at one of our favorite places, Rock Meadow!</figcaption>
+            </figure>
+        </div>
     </div>
     <footer>
         Updated 2026
